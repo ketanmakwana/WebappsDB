@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+     version="2.5">
+          <!-- Define a JSP file to respond to /shop/item/* URL's -->
+        <servlet>
+                <servlet-name>login</servlet-name>
+                <jsp-file>login.jsp</jsp-file>
+        </servlet>
+
+        <!-- Map some URL's to the pathjsp servlet (demonstrates /long/path/* URL mapping) -->
+        <servlet-mapping>
+                <!-- For any URL starting with /shop/item/, the pathjsp servlet will be called -->
+                <servlet-name>login</servlet-name>
+                <url-pattern>/login</url-pattern>
+        </servlet-mapping> 
+
+</web-app>
